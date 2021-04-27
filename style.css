@@ -1,0 +1,63 @@
+/*světle oranžová			
+tmavě oranžová			#FF7933
+tměvě hnědá			#5D544F
+temně hnědá (písmo)		#261E1B
+
+
+knihařská kost			#F4F8F9
+šídlo (červeno-hnědá)		#772A24
+*/
+
+.body {
+    background-color: #FFC53D;
+    color: #261E1B;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+.website {
+    margin: 0;
+    padding: 10px 300px;
+    display: grid;
+    grid-template-rows: 40px 600px 40px auto 40px;
+    background-color: #E2E1DD;
+}
+
+.menu {
+    grid-row: 1 / 2;
+    background-color: #5D544F;
+    color: #F4F8F9;
+}
+
+header {
+    grid-row: 2 / 3;
+    background-image: url(images/o-mne.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs {
+    grid-row: 3 / 4;
+    background-color: #FF7933;
+    color: #F4F8F9;
+}
+
+main {
+    grid-row: 4 / 5;
+}
+
+footer {
+    grid-row: -2 / -1;
+    background-color: #261E1B;
+    color: #F4F8F9;
+}
