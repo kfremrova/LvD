@@ -1,0 +1,77 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  :after,
+  :before {
+    box-sizing: inherit;
+  }
+
+  /*Info ke stylování:
+
+  Písmo
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Montserrat', sans-serif;
+  
+  Barvy
+  temně hnědá (písmo)		#261E1B (asi nejlépe na písmo, menu, nav, footer)
+  #FFE099 jasmine
+  #FFE7AD banana mania (zatím se mi zdá nejlepší)
+  #FFF3D6 corn silk (nejsvětlejší)
+  #FFF9EB old lace (nejsvětlejší)
+  */
+
+  /*základní nastavení stránky*/
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .website {
+    color: #261E1B;
+    background-color: #FFF9EB;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: 40px auto 40px auto 40px;
+  }
+  
+  /*rozvržení částí stránky pomocí gridu*/
+
+  .menu {
+    grid-row: 1 / 2;
+  }
+
+  .header {
+    grid-row: 2 / 3;
+  }
+
+  .breadcrumbs {
+    grid-row: 3 / 4;
+  }
+
+  .main {
+    grid-row: 4 / 5;
+  }
+
+  .footer {
+    grid-row: -2 / -1;
+  }
+
+  
+
+  .header {
+    background-color: #FFE099;
+    padding: 60px;
+  }
+
+  .header__title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 88px;
+  }
+
+  .page-intro {
+    text-align: left;
+  }
+
